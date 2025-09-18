@@ -22,6 +22,52 @@ header {
   overflow: hidden;
 }
 
+
+.hamburger-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #0bb70b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #0a7c0a;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  background: #0bb70b;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.hamburger.active {
+  background: #ffffff;
+  color: #0bb70b;
+}
+
+#menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+#menu.active {
+
+  display: flex;
+}
+
 header img {
   width: 120px;
   height: 120px;
@@ -44,14 +90,6 @@ header p {
   font-size: 1.1rem;
   margin-top: 8px;
   color: #d4fcdc;
-}
-
-nav {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
 }
 
 nav a button {
@@ -186,4 +224,5 @@ footer::before {
 .ceo{
   border-radius: 10px;
   border: 2px solid #0bb70b;
+
 }
