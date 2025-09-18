@@ -11,12 +11,16 @@
     <img src="logo.jpg" alt="Picture Not Found"/>
     <h1>Phucuka Mzansi Foundation</h1>
     <p>Empowering Communities, One Step at a Time</p>
-    <nav>
+    <div class="hamburger-container">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
       <a href="AboutUs.html"><button>About Us</button></a>
       <a href="ContactUs.html"><button>Contact Us</button></a>
       <a href="Objectives.html"><button>Objectives</button></a>
       <a href="Members.html"><button>Members</button></a>
     </nav>
+  </div>
+
   </header>
 
   <main>
@@ -82,5 +86,12 @@
     </div>
   </footer>
 </body>
+  <script>
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('active');
+}
+</script>
 </html>
+
 
